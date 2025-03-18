@@ -1,0 +1,23 @@
+{
+  "name": "automa--ocurso",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx codeceptjs run --steps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariafigueiredoflexmobile/automa--oCurso.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariafigueiredoflexmobile/automa--oCurso/issues"
+  },
+  "homepage": "https://github.com/mariafigueiredoflexmobile/automa--oCurso#readme",
+  "description": "",
+  "dependencies": {
+    "codeceptjs": "^3.7.2",
+    "webdriverio": "^9.12.0"
+  }
+}
