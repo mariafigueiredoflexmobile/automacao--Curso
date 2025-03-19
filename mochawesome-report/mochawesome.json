@@ -1,0 +1,178 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-03-19T18:17:23.145Z",
+    "end": "2025-03-19T18:17:39.891Z",
+    "duration": 16746,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "185deb22-dcea-480a-a0f6-855b10cf3f2c",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9a54a576-7c47-4eab-9349-acbe0f1436ef",
+          "title": "login",
+          "fullFile": "C:\\Users\\qualidade2\\Documents\\GitHub\\automa--oCurso\\login_test.js",
+          "file": "\\login_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite",
+              "fullTitle": "login \"before all\" hook: codeceptjs.beforeSuite",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "969b384d-1ed9-419b-809b-912769975287",
+              "parentUUID": "9a54a576-7c47-4eab-9349-acbe0f1436ef",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before",
+              "fullTitle": "login \"before each\" hook: codeceptjs.before",
+              "timedOut": false,
+              "duration": 7680,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "cf19b7c6-83b0-4a36-bf33-d74684bf4799",
+              "parentUUID": "9a54a576-7c47-4eab-9349-acbe0f1436ef",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite",
+              "fullTitle": "login \"after all\" hook: codeceptjs.afterSuite",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "626742c6-8b64-481c-9236-6c2610d44860",
+              "parentUUID": "9a54a576-7c47-4eab-9349-acbe0f1436ef",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs",
+              "fullTitle": "login \"after each\" hook: finalize codeceptjs",
+              "timedOut": false,
+              "duration": 233,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "bc3ea3bd-68a0-47f0-aa9e-35c8425a6751",
+              "parentUUID": "9a54a576-7c47-4eab-9349-acbe0f1436ef",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Login with sucess",
+              "fullTitle": "login: Login with sucess",
+              "timedOut": false,
+              "duration": 8828,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//fill email field\nI.fillField('~email','teste@teste.com')\n//fill password field\nI.fillField('~senha','123456')\n   //fill on enter\n  // I.waitForElement(\"~entrar\", 10); // Espera até 10 segundos pelo botão\n   //I.seeElement(\"~entrar\"); // Verifica se o botão está visível\n // Aguarda o botão \"entrar\" estar visível\n\n // Clica no botão \"entrar\"\n //I.tap(\"//android.view.ViewGroup[@content-desc='entrar']\");\nI.tap('~entrar')\n\nI.waitForElement('~salvar', 5)\nI.seeElement('~salvar')\n   \t//android.view.ViewGroup[@content-desc=\"entrar\"]\n   \n//check\n//I.waitForElement('~codigo', 5)\n//I.seeElement('~codigo')\n   ///android.view.ViewGroup[@content-desc=\"salvar\"]/android.view.ViewGroup\n   //~codigo",
+              "err": {
+                "message": "Error: WebDriverError: Request with GET/HEAD method cannot have body. when running \"touch/perform\" with method \"GET\" and args \"{\"actions\":[{\"action\":\"tap\",\"options\":{\"element\":\"b5a954f6-3689-4511-80af-dea632d1a735\"}}]}\"",
+                "estack": "WebDriverError: Request with GET/HEAD method cannot have body. when running \"touch/perform\" with method \"GET\" and args \"{\"actions\":[{\"action\":\"tap\",\"options\":{\"element\":\"b5a954f6-3689-4511-80af-dea632d1a735\"}}]}\"\n\nScenario Steps:\n\n- I.tap(\"~entrar\") at Test.<anonymous> (login_test.js:15:7)\n- I.fillField(\"~senha\", \"123456\") at Test.<anonymous> (login_test.js:7:7)\n- I.fillField(\"~email\", \"teste@teste.com\") at Test.<anonymous> (login_test.js:5:7)\n\n",
+                "diff": null
+              },
+              "uuid": "415918b3-5055-4871-aca4-ab1e862a6c74",
+              "parentUUID": "9a54a576-7c47-4eab-9349-acbe0f1436ef",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "415918b3-5055-4871-aca4-ab1e862a6c74"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 8828,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.1.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {},
+      "version": "5.2.0"
+    }
+  }
+}

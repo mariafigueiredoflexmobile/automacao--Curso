@@ -1,23 +1,23 @@
 {
-  "name": "automa--ocurso",
+  "name": "qazando-automation",
   "version": "1.0.0",
+  "description": "Projeto de testes automatizados qazando",
   "main": "index.js",
-  "scripts": {
+    "scripts": {
+  "android": "npx codeceptjs run --reporter mochawesome -c codecept.conf.js --override \"{\\\"helpers\\\": {\\\"Appium\\\": {\\\"platform\\\": \\\"Android\\\", \\\"app\\\": \\\"C:\\\\Users\\\\qualidade2\\\\.android\\\\app-release.apk\\\", \\\"desiredCapabilities\\\": {\\\"appPackage\\\": \\\"com.qazandoapp\\\", \\\"appActivity\\\": \\\"MainActivity\\\", \\\"deviceName\\\": \\\"pixel\\\", \\\"platformVersion\\\": \\\"7\\\"}}}}\"",    
+  "ios": "npx codeceptjs run --reporter mochawesome -c codecept.conf.js --override '{\"helpers\": {\"Appium\": { \"platform\": \"iOS\", \"app\": \"/Users/qazando/Documents/qazandoapp.app\", \"desiredCapabilities\": { \"deviceName\": \"iPhone 11 Pro Max\", \"platformVersion\": \"13.1\" }}}} ' --debug ",
     "test": "npx codeceptjs run --steps"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mariafigueiredoflexmobile/automa--oCurso.git"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mariafigueiredoflexmobile/automa--oCurso/issues"
-  },
-  "homepage": "https://github.com/mariafigueiredoflexmobile/automa--oCurso#readme",
-  "description": "",
   "dependencies": {
-    "codeceptjs": "^3.7.2",
-    "webdriverio": "^9.12.0"
+    "codeceptjs": "^2.6.5",
+    "mochawesome": "^6.1.1",
+    "node-random-name": "^1.0.1",
+    "random-number": "0.0.9",
+    "webdriverio": "^6.1.11"
+  },
+  "devDependencies": {
+    "mocha": "^8.0.1"
   }
 }
