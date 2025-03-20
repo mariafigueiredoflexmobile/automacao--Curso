@@ -7,7 +7,7 @@ module.exports = {
   button:{
     save: '~salvar',
   },
-  checkLoginSucess() { 
+  checkLoginSucess() {
     I.waitForElement('~salvar', 5);
     I.seeElement('~salvar');
   }

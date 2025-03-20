@@ -1,6 +1,23 @@
 Feature('login');
 const {I, login_page, home_page} = inject()
 
+
+BeforeSuite(() => {
+   console.log('Before Suite')
+});
+
+Before(() => {
+   console.log('Before')
+});
+
+AfterSuite(() => {
+   console.log('After Suite')
+});
+
+After(() => {
+   console.log('After')
+});
+
 Scenario('Login with sucess',  (home_page) => {
 
    login_page.doLogin('teste@teste.com', '123456')

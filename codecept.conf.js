@@ -28,8 +28,9 @@ exports.config = {
     login_page: './pages/login_page.js',
     home_page: './pages/home_page.js',
   },
+  bootstrap: './server.js',
+  teardown: './server.js',
   mocha: {},
-  
   plugins: {
     screenshotOnFail: {
       enabled: true
