@@ -9,7 +9,7 @@ setHeadlessWhen(process.env.HEADLESS);
 /** @type {CodeceptJS.MainConfig} */
 exports.config = {
   name: 'automa--oCurso',
-  tests: './*_test.js',
+  tests: './steps/*_test.js',
   output: './output',
   helpers: {
     Appium: {
@@ -24,7 +24,9 @@ exports.config = {
     }
   },
   include: {
-    I: './steps_file.js'
+    I: './steps_file.js',
+    login_page: './pages/login_page.js',
+    home_page: './pages/home_page.js',
   },
   mocha: {},
   
