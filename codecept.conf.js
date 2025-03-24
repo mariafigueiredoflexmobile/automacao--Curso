@@ -21,10 +21,10 @@ exports.config = {
   bootstrap: './server/server.js',
   teardown: './server/server.js',
   hooks: [],
-  gherkin: {
-    features: './features/*.feature',
-    steps: ['./step_definitions/steps.js']
-  },
+  // gherkin: {
+  //   features: './features/*.feature',
+  //   steps: ['./step_definitions/steps.js']
+  // },
   plugins: {
     screenshotOnFail: {
       enabled: true

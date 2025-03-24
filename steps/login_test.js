@@ -20,6 +20,10 @@ After(() => {
 
 Scenario('Login with sucess',  (home_page) => { //login com sucesso
 
+   I.runOnAndroid(() => {
+      console.log('Estou no Android')
+   }),
+
    login_page.doLogin('teste@teste.com', '123456')
     
    I.tap('~entrar')
