@@ -2,27 +2,27 @@ const { I } = inject();
 
 module.exports = {
 
-  fields:{
+  fields:{ //CAMPOS DE ENTRADA DO LOGIN
     email: '~email',
     password: '~senha'
   },
 
-  buttons:{
+  buttons:{ //BOTÕES
     enter: '~entrar'
   },
 
-  messages:{
+  messages:{ //MENSAGEM DE ERRO
     loginError: "~lognFail"
   },
 
 
-  doLogin(email, password) {
+  doLogin(email, password) { //MÉTODO PARA REALIZAR O LOGIN
     I.fillField(this.fields.email,email)
     I.fillField(this.fields.password,password)
     I.tap(this.buttons.enter);
   },
 
-  ckeckLoginError() { 
+  ckeckLoginError() { //MÉTODO PARA VERIFICAR O ERRO NO LOGIN
     I.waitForElement("~lognFail", 5);
     I.seeElement("~lognFail");
   }
