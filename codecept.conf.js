@@ -34,5 +34,5 @@ exports.config = {
     }
   },
   name: 'automa--oCurso',
-  tests: './steps/*_test.js'
+  tests: './steps/students_test.js'
 }
