@@ -3,12 +3,13 @@ exports.config = {
   helpers: {
     Appium: {
       platform: 'Android',
-      app: 'C:/Users/qualidade2/.android/app-release.apk',
+      // app: 'C:/Users/qualidade2/.android/app-release.apk',
+      app: 'C:/Users/qualidade2/.android/automacao/apks/afv.apk',
       desiredCapabilities: {
-        appPackege: 'com.qazandoapp',
-        appActivity: 'MainActivity',
-        deviceName: 'pixel',
-        platformVersion: '7'
+        appPackage: "br.com.flexmobile.afv",
+        appActivity: "br.com.flextotal.afvandroid.main.LoginActivity",
+        deviceName: 'pixel2',
+        platformVersion: '9'
       }
     }
   },
@@ -34,5 +35,5 @@ exports.config = {
     }
   },
   name: 'automa--oCurso',
-  tests: './steps/students_test.js'
+  tests: './steps/*_test.js'
 }
